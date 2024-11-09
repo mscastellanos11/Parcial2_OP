@@ -1,0 +1,271 @@
+/* ===== General ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Fondo general */
+    color: #030303; /* Texto general */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Encabezado (Header) ===== */
+.custom-navbar {
+    background-color: #207cd7; /* Fondo azul oscuro */
+    color: #ffffff;
+}
+
+.custom-navbar .navbar-brand span {
+    font-weight: bold;
+    color: #ffcc00; /* Amarillo para el título */
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffcc00; /* Amarillo al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* ===== Pie de Página (Footer) ===== */
+.custom-footer {
+    background-color: #001f3f; /* Fondo azul oscuro */
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.custom-footer .footer-link {
+    color: #ffcc00; /* Amarillo para enlaces */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-link:hover {
+    color: #ffffff; /* Blanco al pasar el cursor */
+    text-decoration: underline;
+}
+
+/* ===== Títulos y Secciones ===== */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1e90ff; /* Azul para títulos */
+    text-align: center;
+}
+
+h2, h5 {
+    color: #333333;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: #1e90ff !important;
+}
+
+/* ===== Estilos para Página de Historia (index.html) ===== */
+.historia-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.historia-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ===== Estilos para Página de Personajes (personajes.html) ===== */
+.list-group-item {
+    padding: 15px 10px;
+    border: 1px solid #dddddd;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+.list-group-item .media img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.list-group-item h5 {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* ===== Estilos para Página de Rangos (rangos.html) ===== */
+.table-bordered {
+    border: 1px solid #ccc;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5; /* Gris claro al pasar el cursor */
+}
+
+.table thead {
+    background-color: #001f3f; /* Fondo azul oscuro en cabecera */
+    color: #ffffff;
+}
+
+.table img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ===== Botones ===== */
+.btn-primary {
+    background-color: #1e90ff; /* Azul fuerte */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1c86e0; /* Azul oscuro al pasar el cursor */
+}
+
+/* ===== Estilos para el Formulario de Contacto (contacto.html) ===== */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form h1 {
+    color: #ffcc00;
+}
+
+/* ===== Imágenes Generales ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Enlaces Generales ===== */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* ===== Espaciado General ===== */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* ===== Responsive - Ajustes en Pantallas Pequeñas ===== */
+@media (max-width: 768px) {
+    .custom-navbar .navbar-brand span {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .list-group-item .media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .list-group-item .media img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Centrar todo el contenido en las celdas de la tabla */
+.table {
+    width: 100%;
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Asegura que las imágenes estén centradas y redondeadas */
+.table img {
+    display: block;
+    margin: auto;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Caja de contacto */
+.contact-box {
+    background-color: #832222; /* Fondo blanco */
+    border: 1px solid #b51c1c; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado en la página */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contact-box h1 {
+    font-size: 2em;
+    color: #ffcc00; /* Color amarillo */
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilos para los campos de formulario */
+.contact-box .form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-box .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-box .form-control:focus {
+    border-color: #1e90ff; /* Azul de foco */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.2);
+}
+
+.contact-box button {
+    background-color: #1e90ff; /* Azul fuerte */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-box button:hover {
+    background-color: #1c86e0; /* Azul oscuro */
+}
